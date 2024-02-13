@@ -5,6 +5,7 @@ const {connectToDb, getDb} = require('./dbconnect.cjs');
 const { ObjectId } = require('mongodb');
 
 const app = express()
+app.use(cors())
 app.use(bodyParser.json());
 let db
 connectToDb(function(error) {

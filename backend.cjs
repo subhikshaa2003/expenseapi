@@ -1,4 +1,5 @@
 const express = require('express')
+const cors =require('cors')
 const bodyParser= require('body-parser')
 // Importing required functions from dbConnection.cjs
 const {connectToDb, getDb} = require('./dbconnect.cjs');
